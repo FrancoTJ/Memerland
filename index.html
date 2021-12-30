@@ -1,124 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memerland</title>
-    <link rel="stylesheet" href="./estilos/memerlandEstilos.css" />
-  </head>
 
-  <body>
-    <!-- Página principal con meme del día al azar, algunos de muestra y formulario de compartir un meme -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memerland</title>
+  <!--Inclusión de Bootstrap, CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./estilos/memerlandEstilos.css" />
+</head>
 
-    <header class="header">
-      <!-- Logo, título y navegación -->
-      <img src="http://dummyimage.com/250x100" alt="Logo" />
-      <nav class="header__nav">
-        <a class="header__nav--link linkInicio" href="#">Inicio</a>
-        <a class="header__nav--link" href="./secciones/caras.html">Caras</a>
-        <a class="header__nav--link" href="./secciones/graficos.html"
-          >Gráficos</a
-        >
-        <a class="header__nav--link" href="./secciones/videos.html">Videos</a>
-        <a class="header__nav--link" href="./secciones/contacto.html"
-          >Contacto</a
-        >
-      </nav>
-    </header>
-    <main>
-      <h1>BIENVENIDO A MEMERLAND</h1>
-      <section class="hero">
-        <article class="hero__section">
-          <h2>Meme del día</h2>
-          <p class="hero__section--p">
-            Origen y detalle: Lorem ipsum, Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Corrupti impedit cupiditate eos
-            laboriosam excepturi odit autem eius nisi, ab ea ipsum doloremque
-            quae at amet dolore perferendis porro, provident cumque debitis fuga
-            dolores, pariatur incidunt commodi. Assumenda saepe ex aspernatur
-            harum accusamus nulla magni veritatis atque facilis.
-          </p>
-          <img
-            class="hero__section--img"
-            src="./assets/img/Trollface.png"
-            alt="Meme del día"
-          />
-        </article>
-        <aside class="hero__ads">
-          <img
-            class="hero__ads--img"
-            src="http://dummyimage.com/250x250"
-            alt="Advertisement"
-          />
-          <img
-            class="hero__ads--img"
-            src="http://dummyimage.com/250x250"
-            alt="Advertisement"
-          />
-        </aside>
-      </section>
-
-      <section class="sectionSecundario">
-        <h2>Otros Memes que Podrían Acompañarte Hoy</h2>
-        <p>
-          Origen y detalle: Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Incidunt ratione dolorum dicta sequi ab voluptatibus deleniti.
+<body>
+  <!-- Página principal con meme del día al azar, algunos de muestra y formulario de compartir un meme -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="navbar-brand__logo" src="./assets/img/logoMemerland-250.png" alt="Logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./secciones/caras.html">Caras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./secciones/graficos.html">Gráficos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./secciones/videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>BIENVENIDO A MEMERLAND</h1>
+    <section class="hero">
+      <article class="hero__section">
+        <h2>Meme del día</h2>
+        <p class="hero__section--p">
+          ¿Has pensado que un meme puede expresar mejor que tú lo que estás sintiendo? si es el caso, quizás el meme del día coincida con lo que pasa ahora por tu mente. Pero no lo olvides: también puedes hablar. Solo queremos que sea una herramienta en tus manos para cuando sea necesario. Si es el caso, úsalos a tu gusto.
         </p>
-        <ul class="sectionSecundario__list">
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/freddie_mercury.jpg"" alt="Meme">
-          </li>
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/obama_not_bad.jpg"" alt="Meme">
-          </li>
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/objection.jpg"" alt="Meme">
-          </li>
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/ultra_gay.jpg"" alt="Meme">
-          </li>
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/yes_this_is_dog.jpg"" alt="Meme">
-          </li>
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/you_dont_say.jpg"" alt="Meme">
-          </li>
-          <li>
-            <img class="sectionSecundario__list--img"
-            src="./assets/index/yo_dawg.jpg"" alt="Meme">
-          </li>
-        </ul>
-        <!-- Visualización de múltiples imágenes de meme -->
-      </section>
-    </main>
-    <footer class="footer">
-      <!-- Logo, navegación y redes sociales-->
-      <img src="http://dummyimage.com/250x100" alt="Logo" />
-      <nav class="footer__nav">
-        <a class="footer__nav--link" href="#">Inicio</a>
-        <a class="footer__nav--link" href="./secciones/caras.html">Caras</a>
-        <a class="footer__nav--link" href="./secciones/graficos.html"
-          >Gráficos</a
-        >
-        <a class="footer__nav--link" href="./secciones/videos.html">Videos</a>
-        <a class="footer__nav--link" href="./secciones/contacto.html"
-          >Contacto</a
-        >
-      </nav>
-      <nav class="footer__redes">
-        <a class="footer__redes--link" href="#">FB</a>
-        <a class="footer__redes--link" href="#">IG</a>
-        <a class="footer__redes--link" href="#">TW</a>
-        <a class="footer__redes--link" href="#">SN</a>
-        <a class="footer__redes--link" href="#">TG</a>
-      </nav>
-    </footer>
-  </body>
+        <img class="hero__section--img" src="./assets/index/obama_not_bad.jpg" alt="Meme del día" />
+      </article>
+
+    </section>
+
+    <section class="sectionSecundario">
+      <h2>Otros Memes que Podrían Acompañarte Hoy</h2>
+      <p>
+        Origen y detalle: Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Incidunt ratione dolorum dicta sequi ab voluptatibus deleniti.
+      </p>
+      <ul class="sectionSecundario__list">
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/freddie_mercury.jpg" alt=" Meme">
+        </li>
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/you_dont_say.jpg" alt=" Meme">
+        </li>
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/objection.jpg"" alt=" Meme">
+        </li>
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/ultra_gay.jpg"" alt=" Meme">
+        </li>
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/yes_this_is_dog.jpg"" alt=" Meme">
+        </li>
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/Trollface.png" alt=" Meme">
+        </li>
+        <li>
+          <img class="sectionSecundario__list--img" src="./assets/index/yo_dawg.jpg"" alt=" Meme">
+        </li>
+      </ul>
+      <!-- Visualización de múltiples imágenes de meme -->
+    </section>
+  </main>
+  <footer class="footer">
+    <!-- Logo, navegación y redes sociales-->
+    <img src="./assets/img/logoMemerland-250.png" alt="Logo" />
+    <nav class="footer__nav">
+      <a class="footer__nav--link" href="#">Inicio</a>
+      <a class="footer__nav--link" href="./secciones/caras.html">Caras</a>
+      <a class="footer__nav--link" href="./secciones/graficos.html">Gráficos</a>
+      <a class="footer__nav--link" href="./secciones/videos.html">Videos</a>
+      <a class="footer__nav--link" href="./secciones/contacto.html">Contacto</a>
+    </nav>
+    <nav class="footer__redes">
+      <a class="footer__redes--link" href="#">FB</a>
+      <a class="footer__redes--link" href="#">IG</a>
+      <a class="footer__redes--link" href="#">TW</a>
+      <a class="footer__redes--link" href="#">SN</a>
+      <a class="footer__redes--link" href="#">TG</a>
+    </nav>
+  </footer>
+  <!--Inclusión de Bootstrap, JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

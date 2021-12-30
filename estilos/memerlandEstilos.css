@@ -9,14 +9,44 @@ body {
   background-color: rgb(241, 233, 241);
   margin-left: auto;
   margin-right: auto;
-  font-family: Georgia, Times, serif;
-  font-weight: bold;
+  font-size: 150%;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
 h1 {
   background-color: #94b3fd;
-  display: flex;
-  justify-content: center;
+
+  background: rgb(120, 87, 208);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(120, 87, 208, 1) 0%,
+    rgba(148, 179, 253, 1) 25%,
+    rgba(120, 87, 208, 1) 50%,
+    rgba(148, 179, 253, 1) 75%,
+    rgba(120, 87, 208, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(120, 87, 208, 1) 0%,
+    rgba(148, 179, 253, 1) 25%,
+    rgba(120, 87, 208, 1) 50%,
+    rgba(148, 179, 253, 1) 75%,
+    rgba(120, 87, 208, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(120, 87, 208, 1) 0%,
+    rgba(148, 179, 253, 1) 25%,
+    rgba(120, 87, 208, 1) 50%,
+    rgba(148, 179, 253, 1) 75%,
+    rgba(120, 87, 208, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857d0",endColorstr="#7857d0",GradientType=1);
+
+  color: white;
+  text-shadow: 4px 4px 6px black;
+  text-align: center;
+  font-weight: bold;
   margin: 1rem 0rem;
   padding: 1rem;
 }
@@ -28,11 +58,27 @@ p {
   margin: 1rem 0rem;
 }
 
-.header {
-  background-color: #b983ff;
-  display: flex;
+.navbar-brand__logo{
+  border-radius: 10px;
 }
 
+.navbar {
+  background-color: #b983ff;
+  /*color: white;*/
+  text-shadow: 2px 2px 2px grey;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  background-color: #9c50ff;
+}
+.img-thumbnail{
+  border:10px solid tomato;
+}
+
+/*
 .header__nav {
   display: flex;
   align-items: center;
@@ -43,8 +89,8 @@ p {
 .header__nav--link {
   margin: 0.5rem;
 }
-
-.linkInicio{
+*/
+.linkInicio {
   margin-left: auto;
 }
 
@@ -75,12 +121,7 @@ p {
   margin-right: 10px;
 }
 
-.hero {
-  display: flex;
-  /*flex-wrap: wrap;*/
-}
-
-.heroColumnas{
+.heroColumnas {
   flex-flow: column;
 }
 
@@ -100,7 +141,8 @@ p {
   border-style: outset;
 }
 
-.hero__section--catalogo { /*Particular de sección Caras*/
+/*Particular de sección Caras*/
+.hero__section--catalogo {
   max-width: 100%;
 }
 
@@ -144,38 +186,37 @@ p {
 
 /*Paleta de colores: https://colorhunt.co/palette/b983ff94b3fd94daff99feff*/
 
-
 /*---Particular de sección Gráficos---*/
 .hero__grilla {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
-  gap:10px;
+  gap: 10px;
   padding: 2rem;
   grid-auto-flow: dense;
 }
 
-.img-grilla img{
+.img-grilla img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.vertical{
-  grid-row: span 3;
+.vertical {
+  grid-row: span 2;
 }
 
 .horizontal {
   grid-column: span 2;
 }
 
-.grande{
+.grande {
   grid-column: span 2;
   grid-row: span 2;
   position: relative;
 }
 
-.img-grilla > p{
+.img-grilla > p {
   position: absolute;
   color: white;
   padding: 10px 20px;

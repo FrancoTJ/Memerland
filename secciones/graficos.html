@@ -5,19 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gráficos</title>
+  <!--Inclusión de Bootstrap, CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="../estilos/memerlandEstilos.css" />
   </head>
   <body>
     <!-- Página con memes gráficos, enlistados y posible puntuación -->
     <header class="header">
-      <!-- Logo, título y navegación -->
-      <img src="http://dummyimage.com/250x100" alt="Logo" />
-      <nav class="header__nav">
-        <a class="header__nav--link  linkInicio" href="../index.html">Inicio</a>
-        <a class="header__nav--link" href="./caras.html">Caras</a>
-        <a class="header__nav--link" href="#">Gráficos</a>
-        <a class="header__nav--link" href="./videos.html">Videos</a>
-        <a class="header__nav--link" href="./contacto.html">Contacto</a>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="navbar-brand__logo" src="../assets/img/logoMemerland-250.png" alt="Logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./caras.html">Caras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Gráficos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./videos.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -25,10 +46,20 @@
       <section class="hero heroColumnas">
         <article class="hero__grilla">
           <div class="img-grilla horizontal">
-            <img src="../assets/grilla/1366_2000.jpg" alt="" />
+            <img src="../assets/grilla/disaster_girl.jpg" alt="" />
+          </div>
+          <div class="img-grilla grande">
+            <p>Sentimiento</p>
+            <img src="../assets/grilla/bear_grylls.jpg" alt="" />
+          </div>
+          <div class="img-grilla">
+            <img src="../assets/grilla/futurama_fry.jpg" alt="" />
           </div>
           <div class="img-grilla">
             <img src="../assets/grilla/8_hours_later.jpg" alt="" />
+          </div>
+          <div class="img-grilla vertical">
+            <img src="../assets/grilla/pedobear.jpg" alt="" />
           </div>
           <div class="img-grilla">
             <img src="../assets/grilla/annoying_facebook_girl.jpg" alt="" />
@@ -36,11 +67,13 @@
           <div class="img-grilla">
             <img src="../assets/grilla/bad_luck_brian.jpg" alt="" />
           </div>
-          <div class="img-grilla grande">
-            <p>Sentimiento</p>
-            <img src="../assets/grilla/bear_grylls.jpg" alt="" />
-          </div>
           <div class="img-grilla horizontal">
+            <img src="../assets/grilla/one_does_not_simply.jpg" alt="" />
+          </div>
+          <div class="img-grilla vertical">
+            <img src="../assets/grilla/redditors_wife.jpg" alt="" />
+          </div>
+          <div class="img-grilla">
             <img src="../assets/grilla/challenge_accepted.jpg" alt="" />
           </div>
           <div class="img-grilla">
@@ -49,14 +82,11 @@
           <div class="img-grilla">
             <img src="../assets/grilla/conspiracy_keanu.jpg" alt="" />
           </div>
-          <div class="img-grilla">
-            <img src="../assets/grilla/disaster_girl.jpg" alt="" />
-          </div>
-          <div class="img-grilla">
+          <div class="img-grilla horizontal">
             <img src="../assets/grilla/first_world_problems.jpg" alt="" />
           </div>
           <div class="img-grilla">
-            <img src="../assets/grilla/futurama_fry.jpg" alt="" />
+            <img src="../assets/grilla/1366_2000.jpg" alt="" />
           </div>
           <div class="img-grilla">
             <img src="../assets/grilla/grandma_finds_the_internet.jpg" alt="" />
@@ -64,15 +94,7 @@
           <div class="img-grilla horizontal">
             <img src="../assets/grilla/memes-10.jpg" alt="" />
           </div>
-          <div class="img-grilla">
-            <img src="../assets/grilla/one_does_not_simply.jpg" alt="" />
-          </div>
-          <div class="img-grilla vertical">
-            <img src="../assets/grilla/pedobear.jpg" alt="" />
-          </div>
-          <div class="img-grilla">
-            <img src="../assets/grilla/redditors_wife.jpg" alt="" />
-          </div>
+
 
 
         </article>
@@ -105,5 +127,9 @@
         <a class="footer__redes--link" href="#">TG</a>
       </nav>
     </footer>
+      <!--Inclusión de Bootstrap, JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
   </body>
 </html>
