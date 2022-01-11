@@ -1,12 +1,6 @@
+#.gitignore por ahora no 
 indexTest.html
-#.gitignore por ahoragot 
-Wireframe Memerland, x5.pdf
-
-Edición línea 1
-Edición línea 2
-Edición línea 3
-Edición línea 4
-Final feliz
-
-
-abc
+node_modules/
+scss/
+package-lock.json
+package.json
