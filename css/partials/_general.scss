@@ -1,0 +1,110 @@
+/*---Partial - General Memerland---*/
+
+/*Reset innecesario debido a Bootstrap*/
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }*/
+
+body {
+  background-color: $BGColor;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  text-align: center;
+}
+
+h1 {
+  background: -moz-radial-gradient(
+    circle,
+    rgba(120, 87, 208, 1) 0%,
+    rgba(148, 179, 253, 1) 25%,
+    rgba(120, 87, 208, 1) 50%,
+    rgba(148, 179, 253, 1) 75%,
+    rgba(120, 87, 208, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(120, 87, 208, 1) 0%,
+    rgba(148, 179, 253, 1) 25%,
+    rgba(120, 87, 208, 1) 50%,
+    rgba(148, 179, 253, 1) 75%,
+    rgba(120, 87, 208, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(120, 87, 208, 1) 0%,
+    rgba(148, 179, 253, 1) 25%,
+    rgba(120, 87, 208, 1) 50%,
+    rgba(148, 179, 253, 1) 75%,
+    rgba(120, 87, 208, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857d0",endColorstr="#7857d0",GradientType=1);
+
+  color: $textLightColor;
+  text-shadow: 4px 4px 6px $textShadow;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0rem;
+  padding: 1rem;
+}
+h2 {
+  text-align: center;
+  margin: 0.5rem;
+}
+p {
+  margin: 1rem 0rem;
+}
+
+.heroColumnas {
+  flex-flow: column;
+}
+
+.hero__section {
+  background-color: $colorPrimary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero__section--img {
+  border: 0.75rem;
+  border-color: $colorBorder;
+  border-style: outset;
+}
+
+/*Particular de sección Caras*/
+
+.hero__section--p {
+  max-width: 800px;
+  text-align: center;
+  flex-shrink: 1;
+  max-width: 75%;
+}
+
+.sectionSecundario {
+  background-color: $colorPrimary;
+  align-items: center;
+  flex-shrink: 1;
+  padding: 1rem;
+}
+
+.sectionSecundario__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sectionSecundario__list--img {
+  margin: 0.5rem;
+  max-width: 350px;
+  min-width: 200px;
+}

@@ -1,0 +1,34 @@
+/*---Partial - Footer Memerland---*/
+
+.footer {
+  background-color: $colorSecondary;
+  display: flex;
+  padding: 0.8em;
+  color: $textLightColor;
+}
+.footer span {
+  font-size: $fontFooterSize;
+  font-family: $fontFooterFamily;
+}
+.footer__nav {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.footer__redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 0;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.footer__nav--link {
+  margin-left: 10px;
+}
+.footer__redes--link {
+  margin-left: 10px;
+}

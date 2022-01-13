@@ -1,0 +1,40 @@
+/*---Partial - Sección Gráficos Memerland---*/
+
+.hero__grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 2rem;
+  grid-auto-flow: dense;
+}
+
+.img-grilla img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.grande {
+  grid-column: span 2;
+  grid-row: span 2;
+  position: relative;
+}
+
+.img-grilla > p {
+  position: absolute;
+  color: $textLightColor;
+  padding: 10px 20px;
+  background-color: $colorThird;
+  left: 10px;
+  bottom: 0px;
+  max-width: 100%;
+}

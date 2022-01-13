@@ -1,6 +1,13 @@
 #.gitignore por ahora no 
-indexTest.html
+
+#--SASS--
+#scss/
+#package-lock.json
+#package.json
 node_modules/
-scss/
-package-lock.json
-package.json
+#------
+
+#--Testing--
+indexTest.html
+css/memerlandEstilos.css
+#------
