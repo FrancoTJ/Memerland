@@ -77,7 +77,6 @@ p {
   border-style: outset;
 }
 
-/*Particular de sección Caras*/
 .hero__section--p {
   max-width: 800px;
   text-align: center;
@@ -86,6 +85,7 @@ p {
   max-width: 75%;
 }
 
+/*Particular de sección Caras*/
 .sectionSecundario {
   background-color: #e6d9f7;
   -webkit-box-align: center;
@@ -120,11 +120,18 @@ p {
   min-width: 200px;
 }
 
-/*---Partial - Navbar Memerland---*/
-.navbar-brand__logo {
-  border-radius: 10px;
+/*---Partial - Caras Memerland---*/
+.sectionSecundario {
+  background-color: #e6d9f7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 1rem;
 }
 
+/*---Partial - Navbar Memerland---*/
 .navbar {
   background-color: #b983ff;
   /*color: white;*/
@@ -133,6 +140,10 @@ p {
 
 .navbar-nav {
   margin-left: auto;
+}
+
+.navbar-brand__logo {
+  border-radius: 10px;
 }
 
 .navbar-toggler {
@@ -202,82 +213,7 @@ p {
   margin-left: 10px;
 }
 
-.heroColumnas {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-.hero__section {
-  background-color: #e6d9f7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.hero__section--img {
-  border: 0.75rem;
-  border-color: #c99fff;
-  border-style: outset;
-}
-
-/*Particular de sección Caras*/
-.hero__section--p {
-  max-width: 800px;
-  text-align: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  max-width: 75%;
-}
-
-.sectionSecundario {
-  background-color: #e6d9f7;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  padding: 1rem;
-}
-
-.sectionSecundario__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sectionSecundario__list--img {
-  margin: 0.5rem;
-  max-width: 350px;
-  min-width: 200px;
-}
-
-/*Paleta de colores: https://colorhunt.co/palette/b983ff94b3fd94daff99feff*/
-/*---Particular de sección Gráficos---*/
+/*---Partial - Sección Gráficos Memerland---*/
 .hero__grilla {
   display: -ms-grid;
   display: grid;

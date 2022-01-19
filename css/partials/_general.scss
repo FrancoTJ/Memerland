@@ -70,41 +70,18 @@ p {
   flex-shrink: 1;
   padding: 1rem;
   margin-bottom: 1rem;
-}
 
-.hero__section--img {
-  border: 0.75rem;
-  border-color: $colorBorder;
-  border-style: outset;
-}
+  &--img {
+    border: 0.75rem;
+    border-color: $colorBorder;
+    border-style: outset;
+  }
 
-/*Particular de sección Caras*/
+  &--p {
+    max-width: 800px;
+    text-align: center;
+    flex-shrink: 1;
+    max-width: 75%;
+  }
 
-.hero__section--p {
-  max-width: 800px;
-  text-align: center;
-  flex-shrink: 1;
-  max-width: 75%;
-}
-
-.sectionSecundario {
-  background-color: $colorPrimary;
-  align-items: center;
-  flex-shrink: 1;
-  padding: 1rem;
-}
-
-.sectionSecundario__list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.sectionSecundario__list--img {
-  margin: 0.5rem;
-  max-width: 350px;
-  min-width: 200px;
 }

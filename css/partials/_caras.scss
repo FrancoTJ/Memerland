@@ -1,0 +1,28 @@
+
+/*---Partial - Caras Memerland---*/
+
+.sectionSecundario {
+    background-color: $colorPrimary;
+    align-items: center;
+    flex-shrink: 1;
+    padding: 1rem;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &--img {
+            margin: 0.5rem;
+            max-width: 350px;
+            min-width: 200px;
+          }
+      }
+  }
+  
+
+  
+  

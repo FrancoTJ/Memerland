@@ -1,20 +1,22 @@
 /*---Partial - Navbar Memerland---*/
 
-.navbar-brand__logo {
-  border-radius: 10px;
-}
-
 .navbar {
   background-color: $colorSecondary;
   /*color: white;*/
   text-shadow: 2px 2px 2px grey;
-}
-.navbar-nav {
-  margin-left: auto;
-}
 
-.navbar-toggler {
-  background-color: $colorPrimaryHard;
+  &-nav {
+    margin-left: auto;
+  }
+
+  &-brand__logo {
+    border-radius: 10px;
+  }
+
+  &-toggler {
+    background-color: $colorPrimaryHard;
+  }
+  
 }
 
 .linkInicio {
