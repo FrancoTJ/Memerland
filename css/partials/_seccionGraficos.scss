@@ -7,6 +7,7 @@
   gap: 10px;
   padding: 2rem;
   grid-auto-flow: dense;
+  align-items: center;
 }
 
 .img-grilla img {
@@ -15,17 +16,25 @@
   object-fit: cover;
 }
 
+@mixin tamañoImgGrid($ancho, $alto) {
+  grid-row: span $ancho;
+  grid-column: span $alto;
+}
+
 .vertical {
-  grid-row: span 2;
+  //grid-row: span 2;
+  @include tamañoImgGrid(2, 1);
 }
 
 .horizontal {
-  grid-column: span 2;
+  //grid-column: span 2;
+  @include tamañoImgGrid(1, 2);
 }
 
 .grande {
-  grid-column: span 2;
-  grid-row: span 2;
+  // grid-column: span 2;
+  // grid-row: span 2;
+  @include tamañoImgGrid(2, 2);
   position: relative;
 }
 

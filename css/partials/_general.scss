@@ -16,6 +16,20 @@ body {
   text-align: center;
 }
 
+.margin1-0 {
+  margin: 1rem 0rem;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend .margin1-0;
+  }
+}
+
+p {
+  @extend .margin1-0;
+}
+
 h1 {
   background: -moz-radial-gradient(
     circle,
@@ -47,15 +61,11 @@ h1 {
   text-shadow: 4px 4px 6px $textShadow;
   text-align: center;
   font-weight: bold;
-  margin: 1rem 0rem;
   padding: 1rem;
 }
+
 h2 {
   text-align: center;
-  margin: 0.5rem;
-}
-p {
-  margin: 1rem 0rem;
 }
 
 .heroColumnas {
@@ -83,5 +93,11 @@ p {
     flex-shrink: 1;
     max-width: 75%;
   }
+}
 
+.zoom {
+  transition: transform 0.2s;
+}
+.zoom:hover {
+  transform: scale(1.1);
 }

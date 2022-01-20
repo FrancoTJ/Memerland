@@ -1,0 +1,12 @@
+    Pendientes a corregir:
+-aplicar cada caso de SASS
+-íconos
+-keywords y description
+-mayúsculas del h1 y h2 con css
+-Tiny png
+
+
+
+
+PRONTO:
+-title separado por pipe

@@ -1,0 +1,9 @@
+---Datos para corrección de tutor---
+
+SASS 2:
+-Maps y Each utilizado en partial _footer.scss
+-For y Extends utilizado en partial _general.scss
+-Mixin utilizado en partial _seccionGraficos, función tamañoImgGrid, con parámetros
+
+Luciano recomendación, sticky bottom a footer:
+-Se corrige pero no convence, en realidad no amerita estar fixed para la info actual. Se restablece estado previo.

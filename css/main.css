@@ -21,9 +21,13 @@ body {
   background-color: #f1e9f1;
   margin-left: auto;
   margin-right: auto;
-  font-size: 125%;
+  font-size: 1.2rem;
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   text-align: center;
+}
+
+.margin1-0, h1, h2, h3, h4, h5, h6, p {
+  margin: 1rem 0rem;
 }
 
 h1 {
@@ -33,17 +37,11 @@ h1 {
   text-shadow: 4px 4px 6px black;
   text-align: center;
   font-weight: bold;
-  margin: 1rem 0rem;
   padding: 1rem;
 }
 
 h2 {
   text-align: center;
-  margin: 0.5rem;
-}
-
-p {
-  margin: 1rem 0rem;
 }
 
 .heroColumnas {
@@ -85,7 +83,19 @@ p {
   max-width: 75%;
 }
 
-/*Particular de sección Caras*/
+.zoom {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*---Partial - Caras Memerland---*/
 .sectionSecundario {
   background-color: #e6d9f7;
   -webkit-box-align: center;
@@ -120,17 +130,6 @@ p {
   min-width: 200px;
 }
 
-/*---Partial - Caras Memerland---*/
-.sectionSecundario {
-  background-color: #e6d9f7;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  padding: 1rem;
-}
-
 /*---Partial - Navbar Memerland---*/
 .navbar {
   background-color: #b983ff;
@@ -155,6 +154,31 @@ p {
 }
 
 /*---Partial - Footer Memerland---*/
+.link--facebook {
+  background-color: #3a5795;
+  border-radius: 50%;
+}
+
+.link--instagram {
+  background-color: #d63384;
+  border-radius: 50%;
+}
+
+.link--twitter {
+  background-color: #55acee;
+  border-radius: 50%;
+}
+
+.link--snapchat {
+  background-color: #f6ff7a;
+  border-radius: 50%;
+}
+
+.link--telegram {
+  background-color: #60d4f7;
+  border-radius: 50%;
+}
+
 .footer {
   background-color: #b983ff;
   display: -webkit-box;
@@ -165,7 +189,7 @@ p {
 }
 
 .footer span {
-  font-size: 85%;
+  font-size: 0.9rem;
   font-family: "Arial", Gadget, sans-serif;
 }
 
@@ -188,6 +212,10 @@ p {
           flex-grow: 1;
 }
 
+.footer__nav--link {
+  margin-left: 10px;
+}
+
 .footer__redes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,10 +233,6 @@ p {
   margin-left: auto;
 }
 
-.footer__nav--link {
-  margin-left: 10px;
-}
-
 .footer__redes--link {
   margin-left: 10px;
 }
@@ -224,6 +248,9 @@ p {
   gap: 10px;
   padding: 2rem;
   grid-auto-flow: dense;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .img-grilla img {
@@ -235,15 +262,17 @@ p {
 
 .vertical {
   grid-row: span 2;
+  grid-column: span 1;
 }
 
 .horizontal {
+  grid-row: span 1;
   grid-column: span 2;
 }
 
 .grande {
-  grid-column: span 2;
   grid-row: span 2;
+  grid-column: span 2;
   position: relative;
 }
 

@@ -1,5 +1,20 @@
 /*---Partial - Footer Memerland---*/
 
+$redesNav: ( 
+  facebook:  #3a5795,
+  instagram: #d63384,
+  twitter: #55acee,
+  snapchat: #f6ff7a,
+  telegram: #60d4f7
+); 
+
+@each $redSocial, $colorRGB in $redesNav {
+   .link--#{$redSocial} {
+       background-color: $colorRGB;
+       border-radius: 50%;
+   }
+}
+
 .footer {
   background-color: $colorSecondary;
   display: flex;
