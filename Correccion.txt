@@ -5,5 +5,15 @@ SASS 2:
 -For y Extends utilizado en partial _general.scss
 -Mixin utilizado en partial _seccionGraficos, función tamañoImgGrid, con parámetros
 
+SEO:
+-Se aplica Keywords y descripción en cada página.
+-Enlisto Keywors respectivos:
+    index.html: memerland, memes, memer, funny memes, meme cara, meme face, meme gráfico, meme video
+    caras.html: memerland, memes, memer, caras, meme cara, faces, meme face, funny memes
+    graficos.html: memerland, memes, memer, chistes gráficos, meme gráficos, funny memes
+    videos.html: memerland, memes, memer, video, meme video, funny memes
+    contacto.html: memerland, contacto, memes, memer
+-Uso básico de etiqueta Aria, WebActual en NavBar
+
 Luciano recomendación, sticky bottom a footer:
--Se corrige pero no convence, en realidad no amerita estar fixed para la info actual. Se restablece estado previo.
+-Se corrige pero no convence, en realidad no amerita estar fixed para la info actual o llega a molestar reduciendo el campo de visión. Se restablece estado previo.

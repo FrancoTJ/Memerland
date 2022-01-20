@@ -1,12 +1,13 @@
     Pendientes a corregir:
--aplicar cada caso de SASS
 -íconos
--keywords y description
 -mayúsculas del h1 y h2 con css
--Tiny png
-
+-Tiny png, reducir tamaño de imágenes
+-Crear redes sociales para la Web
+-Adquirir dominio?
 
 
 
 PRONTO:
 -title separado por pipe
+-aplicar beneficios de SASS, orden, parcials, funciones, etc.
+-keywords y description
