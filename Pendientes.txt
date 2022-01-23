@@ -5,7 +5,7 @@
 -Crear redes sociales para la Web
 -Adquirir dominio?
 
-
+-hacer Presupuesto y entgregar en PDF
 
 PRONTO:
 -title separado por pipe

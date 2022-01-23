@@ -1,41 +1,32 @@
 /*---Partial - Footer Memerland---*/
 
-$redesNav: ( 
-  facebook:  #3a5795,
-  instagram: #d63384,
-  twitter: #55acee,
-  snapchat: #f6ff7a,
-  telegram: #60d4f7
-); 
+$redesNav: (
+  facebook: $iconFacebook,
+  instagram: $iconInstagram,
+  twitter: $iconTwitter,
+  snapchat: $iconSnapchat,
+  telegram: $iconTelegram,
+);
 
 @each $redSocial, $colorRGB in $redesNav {
-   .link--#{$redSocial} {
-       background-color: $colorRGB;
-       border-radius: 50%;
-   }
+  .link--#{$redSocial} {
+    color: $colorRGB;
+    border-radius: 50%;
+  }
 }
 
 .footer {
   background-color: $colorSecondary;
   display: flex;
-  padding: 0.8em;
+  padding: 0.3em 0.8em;
   color: $textLightColor;
 
   & span {
     font-size: $fontFooterSize;
     font-family: $fontFooterFamily;
-  }
-
-  &__nav {
     display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-grow: 1;
-
-    &--link {
-      margin-left: 10px;
-    }
+    align-items: center;
+    max-width: 60%;
   }
 
   &__redes {
@@ -45,14 +36,30 @@ $redesNav: (
     flex-grow: 0;
     overflow: hidden;
     margin-left: auto;
+    flex-wrap: wrap;
 
     &--link {
       margin-left: 10px;
+
+      &:hover {
+        color: $footerLinkHover;
+      }
     }
   }
+
+  & .modal{
+    color: $footerModalText;
+    text-align: left;
+  }
+
+  & .modal-footer {
+    background-color: $colorPrimary;
+  }
+
+  & .btn-secondary{
+    background-color: $colorPrimaryHard;
+    border: 0px;
+  }
+
+
 }
-
-
-
-
-

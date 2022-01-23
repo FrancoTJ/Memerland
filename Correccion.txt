@@ -17,3 +17,17 @@ SEO:
 
 Luciano recomendación, sticky bottom a footer:
 -Se corrige pero no convence, en realidad no amerita estar fixed para la info actual o llega a molestar reduciendo el campo de visión. Se restablece estado previo.
+
+
+
+--------------------------TERCERA ENTREGA DEL PROYECTO FINAL, hasta 24/01/2022--------------------------
+
+Footer:
+-inclusión de íconos en SVG
+-creación de redes sociales relacionadas (excepto Snapchat)
+-red social Snapchat aviso mediante modal personalizado
+
+
+
+
+

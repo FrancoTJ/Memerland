@@ -10,6 +10,9 @@
 /*Bordes de color primario*/
 /*Extras*/
 /*Text*/
+/*Íconos de Bootstrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+/*Colores de íconos de Redes Sociales*/
 /*---Partial - General Memerland---*/
 /*Reset innecesario debido a Bootstrap*/
 /*{
@@ -155,27 +158,27 @@ h2 {
 
 /*---Partial - Footer Memerland---*/
 .link--facebook {
-  background-color: #3a5795;
+  color: #3b5998;
   border-radius: 50%;
 }
 
 .link--instagram {
-  background-color: #d63384;
+  color: #d63384;
   border-radius: 50%;
 }
 
 .link--twitter {
-  background-color: #55acee;
+  color: #55acee;
   border-radius: 50%;
 }
 
 .link--snapchat {
-  background-color: #f6ff7a;
+  color: #fffc00;
   border-radius: 50%;
 }
 
 .link--telegram {
-  background-color: #60d4f7;
+  color: #0088cc;
   border-radius: 50%;
 }
 
@@ -184,36 +187,20 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.8em;
+  padding: 0.3em 0.8em;
   color: white;
 }
 
 .footer span {
   font-size: 0.9rem;
   font-family: "Arial", Gadget, sans-serif;
-}
-
-.footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.footer__nav--link {
-  margin-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 60%;
 }
 
 .footer__redes {
@@ -231,10 +218,30 @@ h2 {
           flex-grow: 0;
   overflow: hidden;
   margin-left: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__redes--link {
   margin-left: 10px;
+}
+
+.footer__redes--link:hover {
+  color: #ae00ff;
+}
+
+.footer .modal {
+  color: black;
+  text-align: left;
+}
+
+.footer .modal-footer {
+  background-color: #e6d9f7;
+}
+
+.footer .btn-secondary {
+  background-color: #9c50ff;
+  border: 0px;
 }
 
 /*---Partial - Sección Gráficos Memerland---*/

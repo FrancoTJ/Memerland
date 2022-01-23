@@ -3,7 +3,7 @@
 .navbar {
   background-color: $colorSecondary;
   /*color: white;*/
-  text-shadow: 2px 2px 2px grey;
+  text-shadow: 2px 2px 2px $textShadowLight;
 
   &-nav {
     margin-left: auto;
