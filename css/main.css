@@ -33,6 +33,14 @@ body {
   margin: 1rem 0rem;
 }
 
+p a {
+  color: #9c50ff;
+}
+
+p a:hover {
+  color: #94b3fd;
+}
+
 h1 {
   background: radial-gradient(circle, #7857d0 0%, #94b3fd 25%, #7857d0 50%, #94b3fd 75%, #7857d0 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857d0",endColorstr="#7857d0",GradientType=1);
@@ -79,11 +87,9 @@ h2 {
 }
 
 .hero__section--p {
-  max-width: 800px;
   text-align: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   max-width: 75%;
+  margin: auto;
 }
 
 .zoom {
@@ -96,6 +102,10 @@ h2 {
 .zoom:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+img {
+  max-width: 95vw;
 }
 
 /*---Partial - Caras Memerland---*/
@@ -125,6 +135,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0px;
 }
 
 .sectionSecundario__list--img {
@@ -253,11 +264,17 @@ h2 {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   gap: 10px;
-  padding: 2rem;
   grid-auto-flow: dense;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero__grilla {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .img-grilla img {
@@ -265,6 +282,7 @@ h2 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  min-width: 100px;
 }
 
 .vertical {
@@ -286,10 +304,24 @@ h2 {
 .img-grilla > p {
   position: absolute;
   color: white;
-  padding: 10px 20px;
   background-color: #94b3fd;
   left: 10px;
   bottom: 0px;
   max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .horizontal {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .grande {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -28,6 +28,14 @@ body {
 
 p {
   @extend .margin1-0;
+
+  & a {
+    color: $colorPrimaryHard;
+  }
+
+  & a:hover {
+    color: $colorThird;
+  }
 }
 
 h1 {
@@ -88,10 +96,11 @@ h2 {
   }
 
   &--p {
-    max-width: 800px;
+    //max-width: 800px;
     text-align: center;
-    flex-shrink: 1;
+    //flex-shrink: 1;
     max-width: 75%;
+    margin: auto;
   }
 }
 
@@ -100,4 +109,8 @@ h2 {
 }
 .zoom:hover {
   transform: scale(1.1);
+}
+
+img {
+  max-width: 95vw;
 }

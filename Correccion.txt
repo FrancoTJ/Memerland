@@ -1,3 +1,4 @@
+--------------------------DESAFÍO SASS 2, hasta 19/01/2022--------------------------
 ---Datos para corrección de tutor---
 
 SASS 2:
@@ -23,9 +24,12 @@ Luciano recomendación, sticky bottom a footer:
 --------------------------TERCERA ENTREGA DEL PROYECTO FINAL, hasta 24/01/2022--------------------------
 
 Footer:
--inclusión de íconos en SVG
+-inclusión de íconos en SVG y correcciones menores en footer, trasladado a las 5 páginas
 -creación de redes sociales relacionadas (excepto Snapchat)
 -red social Snapchat aviso mediante modal personalizado
+-texto en página de contacto
+-corrección en padding left en imágenes de graficos.html que dificultaba visibilidad responsive
+-inclusión de @media para corregir mínimos tamaños de imágenes en graficos.html y correcta ordenación en pantallas que lo permitan
 
 
 

@@ -1,13 +1,29 @@
-    Pendientes a corregir:
--íconos
+
+    Pendientes a corregir:/agregar
+
 -mayúsculas del h1 y h2 con css
--Tiny png, reducir tamaño de imágenes
--Crear redes sociales para la Web
--Adquirir dominio?
+-tiny png, reducir tamaño de imágenes
+-adquirir dominio?
+-inclusión de form en página de contacto?
+-opción de valorar el meme del día
+-información extra en tarjetas de cada imagen?
+-inclusión de botón copiar en imágenes y link en videos
+-imagen de contacto, representativa de empresa
+-agregar más videos a la sección Videos
+-mejorar maquetación Web con Bootstrap
 
--hacer Presupuesto y entgregar en PDF
 
+
+
+__________________________
 PRONTO:
 -title separado por pipe
 -aplicar beneficios de SASS, orden, parcials, funciones, etc.
 -keywords y description
+-íconos
+-Crear redes sociales para la Web
+-hacer Presupuesto y entgregar en PDF
+-max Widht en todas las imágenes, ver si mediante una clase es suficiente o uso de @media
+-agregar alguna @media específica para demostrar su uso
+
+

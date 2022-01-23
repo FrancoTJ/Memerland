@@ -5,15 +5,21 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
   gap: 10px;
-  padding: 2rem;
   grid-auto-flow: dense;
   align-items: center;
+  
+  @media only screen and (max-width: 600px) {  
+    &{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  } 
 }
 
 .img-grilla img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  min-width: 100px;
 }
 
 @mixin tamañoImgGrid($ancho, $alto) {
@@ -41,9 +47,22 @@
 .img-grilla > p {
   position: absolute;
   color: $textLightColor;
-  padding: 10px 20px;
   background-color: $colorThird;
   left: 10px;
   bottom: 0px;
   max-width: 100%;
 }
+
+@media only screen and (max-width: 600px) {  
+  .vertical {
+    @include tamañoImgGrid(1, 1);
+  }
+  
+  .horizontal {
+    @include tamañoImgGrid(1, 1);
+  }
+  
+  .grande {
+    @include tamañoImgGrid(1, 1);
+  }
+} 
