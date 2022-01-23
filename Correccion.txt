@@ -30,6 +30,7 @@ Footer:
 -texto en página de contacto
 -corrección en padding left en imágenes de graficos.html que dificultaba visibilidad responsive
 -inclusión de @media para corregir mínimos tamaños de imágenes en graficos.html y correcta ordenación en pantallas que lo permitan
+-reducción de tamaño imágenes con TinyPng
 
 
 
