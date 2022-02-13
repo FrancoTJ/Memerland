@@ -1,0 +1,17 @@
+section {
+    text-align: left;
+}
+
+.section--img-collage {
+    max-width: 60vw;
+    max-height: 60vh;
+    float: right;
+    margin: 0em 1em;
+
+    @media only screen and (max-width: 500px) {  
+        &{
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+      } 
+}

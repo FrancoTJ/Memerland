@@ -1,3 +1,7 @@
+--------------------------GENERAL--------------------------
+-Uso de Grids en graficos.html
+-Maquetado general con Bootstrap
+
 --------------------------DESAFÍO SASS 2, hasta 19/01/2022--------------------------
 ---Datos para corrección de tutor---
 

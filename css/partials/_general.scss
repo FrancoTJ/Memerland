@@ -14,6 +14,8 @@ body {
   font-size: $fontSize;
   font-family: $fontFamily;
   text-align: center;
+  
+  min-height: 100%;
 }
 
 .margin1-0 {
@@ -36,6 +38,10 @@ p {
   & a:hover {
     color: $colorThird;
   }
+}
+
+h1, h2 {
+  text-transform: uppercase;
 }
 
 h1 {
