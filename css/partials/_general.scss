@@ -80,6 +80,7 @@ h1 {
 
 h2 {
   text-align: center;
+  text-shadow: 0px 0px 6px white;
 }
 
 .heroColumnas {
@@ -106,7 +107,8 @@ h2 {
     text-align: center;
     //flex-shrink: 1;
     max-width: 75%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

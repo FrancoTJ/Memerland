@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------
+--------------------------DATOS PARA CORRECCIÓN--------------------------
+-------------------------------------------------------------------------
+
+--------------------------GENERAL--------------------------
+-Uso de Grids en graficos.html
+-Uso de Flexbos en NavBar, Footer y otros
+-Maquetado general con Bootstrap
+
+--------------------------SASS--------------------------
+
+SASS:
+-Maps y Each utilizado en partial _footer.scss
+-For y Extends utilizado en partial _general.scss
+-Mixin utilizado en partial _seccionGraficos, función tamañoImgGrid, con parámetros
+
+SEO:
+-Se aplica Keywords y descripción en cada página.
+-Enlisto Keywors respectivos:
+    index.html: memerland, memes, memer, funny memes, meme cara, meme face, meme gráfico, meme video
+    caras.html: memerland, memes, memer, caras, meme cara, faces, meme face, funny memes
+    graficos.html: memerland, memes, memer, chistes gráficos, meme gráficos, funny memes
+    videos.html: memerland, memes, memer, video, meme video, funny memes
+    contacto.html: memerland, contacto, memes, memer
+-Uso básico de etiqueta Aria, WebActual en NavBar
+
+
+
+-------------------------------------------------------------------------
+--------------------------------PENDIENTES-------------------------------
+-------------------------------------------------------------------------
+
+--------------------------CORREGIR/AGREGAR--------------------------
+
+-agregar más contenido a cada sección
+
+--------------------------OPCIONAL--------------------------
+
+-adquirir dominio?
+-inclusión de form en página de contacto? 
+
+--------------------------PRONTO--------------------------
+-title separado por pipe
+-aplicar beneficios de SASS, orden, parcials, funciones, etc.
+-keywords y description
+-inclusión de íconos en SVG y correcciones menores en footer, trasladado a las 5 páginas
+-navbar que achique cuando no haya espacio para el texto
+-creación de redes sociales relacionadas (excepto Snapchat)
+-red social Snapchat aviso mediante modal personalizado
+-tiny png, reducir tamaño de imágenes
+-inclusión de @media para corregir responsive
+-reducción de tamaño imágenes con TinyPng
+-footer que se mantenga en bottom a pesar de contenido insuficiente para llenar página
+-mayúsculas del h1 y h2 con css
+-mejorar maquetación Web con Bootstrap
+-inclusión de botón copiar en imágenes y link en videos. --Desestimado por necesidad de JS
+-opción de valorar el meme del día. --Desestimado por necesidad de JS
+-imagen de contacto, contemplando la extensión de texto
+-información de extra en tarjetas, puesta en caras.html
+-animaciones: inicio.html y caras.html zoom en hover, graficos.html y videos.html leve sombra en hover

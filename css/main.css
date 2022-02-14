@@ -9,6 +9,7 @@
 /*Navbar, Footer*/
 /*Bordes de color primario*/
 /*Extras*/
+/*Extras*/
 /*Text*/
 /*Íconos de Bootstrap*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
@@ -58,6 +59,7 @@ h1 {
 
 h2 {
   text-align: center;
+  text-shadow: 0px 0px 6px white;
 }
 
 .heroColumnas {
@@ -94,7 +96,8 @@ h2 {
 .hero__section--p {
   text-align: center;
   max-width: 75%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .zoom {
@@ -272,6 +275,22 @@ img {
   text-shadow: white 2px 0px 0px, white 1.75517px 0.95885px 0px, white 1.0806px 1.68294px 0px, white 0.14147px 1.99499px 0px, white -0.83229px 1.81859px 0px, white -1.60229px 1.19694px 0px, white -1.97998px 0.28224px 0px, white -1.87291px -0.70157px 0px, white -1.30729px -1.5136px 0px, white -0.42159px -1.95506px 0px, white 0.56732px -1.91785px 0px, white 1.41734px -1.41108px 0px, white 1.92034px -0.55883px 0px;
 }
 
+.cardMeme {
+  position: relative;
+}
+
+.cardMeme > p {
+  position: absolute;
+  color: white;
+  text-shadow: 0px 0px 4px black;
+  background-color: rgba(148, 179, 253, 0.95);
+  left: 20px;
+  bottom: 0px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0em 0.7em;
+}
+
 /*---Partial - Sección Gráficos Memerland---*/
 .hero__grilla {
   display: -ms-grid;
@@ -285,6 +304,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0.5em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -300,6 +320,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   min-width: 100px;
+  border-radius: 2%;
 }
 
 .vertical {
@@ -315,16 +336,6 @@ img {
 .grande {
   grid-row: span 2;
   grid-column: span 2;
-  position: relative;
-}
-
-.img-grilla > p {
-  position: absolute;
-  color: white;
-  background-color: #94b3fd;
-  left: 10px;
-  bottom: 0px;
-  max-width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -340,6 +351,20 @@ img {
     grid-row: span 1;
     grid-column: span 1;
   }
+}
+
+.resaltar {
+  border-radius: 2%;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.resaltar:hover {
+  border-radius: 2%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 iframe {
@@ -359,8 +384,8 @@ section {
 
 @media only screen and (max-width: 500px) {
   .section--img-collage {
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 85vw;
+    max-height: 85vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,7 @@
   gap: 10px;
   grid-auto-flow: dense;
   align-items: center;
+  margin-bottom: 0.5em;
   
   @media only screen and (max-width: 600px) {  
     &{
@@ -20,6 +21,7 @@
   height: 100%;
   object-fit: cover;
   min-width: 100px;
+  border-radius: 2%;
 }
 
 @mixin tamañoImgGrid($ancho, $alto) {
@@ -41,16 +43,6 @@
   // grid-column: span 2;
   // grid-row: span 2;
   @include tamañoImgGrid(2, 2);
-  position: relative;
-}
-
-.img-grilla > p {
-  position: absolute;
-  color: $textLightColor;
-  background-color: $colorThird;
-  left: 10px;
-  bottom: 0px;
-  max-width: 100%;
 }
 
 @media only screen and (max-width: 600px) {  
@@ -66,3 +58,14 @@
     @include tamañoImgGrid(1, 1);
   }
 } 
+
+.resaltar {
+  border-radius: 2%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover {
+    border-radius: 2%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  
+  }
+}
+
